@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>O Enigma do Emagrecimento</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.jpg">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+    <div class="black">
+    <div id="primeira">
+    <div class="question">
+<h1>Pergunta 1</h1>
+<p>Você realmente quer descobrir esse segredo?</p>
+    </div>
+<div class="answer">
+<button class="btn" onclick="segunda()">SIM</button>
+<button class="btn" onclick="segunda()">NÃO</button>
+    </div>
+    </div>
+    <div id="segunda" class="hide">
+    <div class="question">
+<h1>Pergunta 2</h1>
+<p>Por ser um conteúdo exclusivo, você promete não revelar para ninguém?</p>
+    </div>
+    <div class="answer">
+<button class="btn" onclick="terceira()">SIM</button>
+<button class="btn" onclick="terceira()">NÃO</button>
+    </div>
+    </div>
+    <div id="terceira" class="hide">
+    <div class="question">
+    <h1>Pergunta 3</h1>
+<p>O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo... Você pretende assistir até o fim?</p>
+    </div>
+<div class="answer">
+<button class="btn" onclick="quarta()">SIM</button>
+<button class="btn" onclick="quarta()">NÃO</button>
+    </div>
+    </div>
+    <div id="quarta" class="hide">
+    <div class="question">
+    <h1>Pergunta 4</h1>
+<p>Teste Pedrauum</p>
+    </div>
+<div class="answer">
+<button class="btn" onclick="quinta()">SIM</button>
+<button class="btn" onclick="quinta()">NÃO</button>
+    </div>
+    </div>
+    <div id="quinta" class="hide">
+    <div class="question">
+    <h1>Pergunta 5</h1>
+<p>Teste</p>
+    </div>
+<div class="answer">
+<button class="btn" onclick="redirect()">SIM</button>
+<button class="btn" onclick="redirect()">NÃO</button>
+    </div>
+    </div>
+    </div>
+<p style="text-align: center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato conosco em horário comercial.</p>
+    </div>
+<script>
+    function segunda() {
+      document.getElementById("primeira").classList.add("hide")
+      document.getElementById("segunda").classList.remove("hide")
+    }
+    function terceira() {
+      document.getElementById("segunda").classList.add("hide")
+      document.getElementById("terceira").classList.remove("hide")
+    }
+     function quarta() {
+      document.getElementById("terceira").classList.add("hide")
+      document.getElementById("quarta").classList.remove("hide")
+    }
+    function quinta() {
+      document.getElementById("quarta").classList.add("hide")
+      document.getElementById("quinta").classList.remove("hide")
+    }
+    function redirect() {
+      location.href = "https://protocolozerobarriga.blog/"
+    }
+  </script>
+</body>
+</html>
